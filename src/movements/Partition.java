@@ -3,9 +3,6 @@
 import java.util.ArrayList;
 import java.util.TreeSet;
 
-import tree.Successor;
-
-
 public class Partition {
 
 	private static TreeSet<String> a = new TreeSet<>();
