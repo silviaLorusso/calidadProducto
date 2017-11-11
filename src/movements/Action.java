@@ -34,14 +34,13 @@ public class Action {
 		this.sandMovement.put(p, i);
 	}
 	
-	public String toString() {
-		String ref="";
-		ref+="("+this.nextPosition+") [";
-		
+	public StringBuilder toString() {
+		StringBuilder sb = new StringBuilder();
+		ref = sb.append("(").append(this.nextPosition).append(") [");
 		for(Position p:sandMovement.keySet()) {
-			ref+=sandMovement.get(p).toString()+p.toString()+",";
+			ref= sb.append(sandMovement.get(p).toString()).sb.append(p.toString()).ab.append(",");
 		}
-		ref+="1]";
+		ref= sb.append("1]");
 		return ref;
 	}
 }
