@@ -1,7 +1,6 @@
  package movements;
 
 import java.util.ArrayList;
-import java.util.TreeSet;
 
 public class Partition {
 
