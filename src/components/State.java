@@ -42,7 +42,7 @@ public class State {
 		try {
 			readField(path);
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			//System.out.println(e.getMessage());
 		}
 	}
 
@@ -121,7 +121,7 @@ public class State {
 
 	public void printFild(String path) throws FileNotFoundException {
 		File file = new File(path);
-		PrintStream out = new PrintStream(new BufferedOutputStream(new FileOutputStream(file)));
+	//	PrintStream out = new PrintStream(new BufferedOutputStream(new FileOutputStream(file)));
 
 		out.println(tractor.getPosition().getY() + "\b" + tractor.getPosition().getX() + "\b" + this.k + "\b" + max
 				+ "\b" + sizeCol + "\b" + sizeRow);
