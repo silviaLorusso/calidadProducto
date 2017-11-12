@@ -35,12 +35,13 @@ public class Action {
 	}
 	
 	public StringBuilder toString() {
-		StringBuilder sb = new StringBuilder();
-		ref = sb.append("(").append(this.nextPosition).append(") [");
+		String ref="";
+		ref+="("+this.nextPosition+") [";
+		
 		for(Position p:sandMovement.keySet()) {
-			ref= sb.append(sandMovement.get(p).toString()).sb.append(p.toString()).ab.append(",");
+			ref+=sandMovement.get(p).toString()+p.toString()+",";
 		}
-		ref= sb.append("1]");
+		ref+="1]";
 		return ref;
 	}
 }
